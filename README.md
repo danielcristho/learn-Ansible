@@ -13,7 +13,7 @@ $ ansible all -b -m service -a "name=nginx state=stopped"
 $ ansible all -b -m apt -a "name=nginx state=absent purge=yes autoremove=yes"
 
 ```
-## ansible  monitroing
+## ansible  monitoring
 
 ```
 $ ansible all -a "free -m"
