@@ -1,12 +1,12 @@
-#Ansible Playbook
+# Ansible Playbook
 
-##run 
+## run 
 ```
 $ ansible-playbook --syntax-check playbook.yaml
 $ ansible-playbook playbook.yaml
 
 ```
-##run with steps
+## run with steps
 ```
 $ ansible-playbook --step playbook.yaml
 
