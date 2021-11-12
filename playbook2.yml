@@ -1,0 +1,13 @@
+---
+- name: Playbook2
+  hosts: all
+  vars:
+    - var1: Linux Ubuntu
+    - var2: Linux Debian
+  tasks:
+    - name: Taks 1
+      shell: echo "var1 is {{ var1 }}, and var2 is {{ var2 }}"  > /home/ansible/info-var.txt
+
+    - name: Task 2
+      shell: echo "var1 is {{ var1 }} and var2 is {{ var2 }}" >> /home/ansible/info-var.txt  
+  

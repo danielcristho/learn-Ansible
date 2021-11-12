@@ -1,0 +1,14 @@
+---
+- name: Playbook 1
+  hosts: all
+  become: yes #become root
+  tasks:
+    - name: Get Linux Info
+      shell: uname -a > /home/ansible/info.txt
+
+    - name: Get Disk Info
+      shell: fdisk -l >> /home/ansible/info.txt
+      ignore_errors: yes
+
+    - name: Get Linux Uptime
+      shell: uptime >> /home/ansible/info.txt 
