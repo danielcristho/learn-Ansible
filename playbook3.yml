@@ -1,5 +1,5 @@
 ---
-- name: Playbook3
+- name: Playbook 3
   hosts: all
   gather_facts: no #agar gathering facts tidak perlu dieksekusi
 
