@@ -1,5 +1,5 @@
 ---
-- name: Playbook2
+- name: Playbook 2
   hosts: all
   vars_files:
     - vars/var1.yml
