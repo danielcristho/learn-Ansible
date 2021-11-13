@@ -1,9 +1,8 @@
 ---
 - name: Playbook2
   hosts: all
-  vars:
-    - var1: Linux Ubuntu
-    - var2: Linux Debian
+  vars_files:
+    - vars/var1.yml
   tasks:
     - name: Taks 1
       shell: echo "var1 is {{ var1 }}, and var2 is {{ var2 }}"  > /home/ansible/info-var.txt
