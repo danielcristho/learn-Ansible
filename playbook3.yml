@@ -1,0 +1,17 @@
+---
+- name: Playbook3
+  hosts: all
+  gather_facts: no #agar gathering facts tidak perlu dieksekusi
+
+  tasks:
+    #group_var
+    - name: Task 1
+      shell: echo "The operating system is {{ os }}" > /home/ansible/tes-var.txt
+    #host_var
+    - name: Task 2
+      shell: echo "The hostname is {{ hostname }}" >> /home/ansible/tes-var.txt
+    # #facts
+    # - name: Task 3
+    #   shell: echo "IP address is {{ ansible_default_ipv4 }}" >> /home/ansible/tes-var.txt
+    # - name: Task 4
+    #   shell: echo "The distribution is {{ ansible_distribution }}" >> /home/ansible/tes-var.txt
