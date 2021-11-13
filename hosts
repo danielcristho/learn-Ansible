@@ -1,5 +1,5 @@
 [ubuntu]
-ubuntu ansible_user=ansible
+srv1 ansible_user=ansible
 
 [debian]
-debian ansible_user=ansible
+srv2 ansible_user=ansible
