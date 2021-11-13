@@ -1,0 +1,14 @@
+---
+- name: Playbook 4
+  hosts: all
+  vars:
+    - var1: "Linux"
+
+  tasks:
+    - name: Linux distros
+      command: echo -e "Linux Distros:\n{{ var1 }} Debian\n{{ var1 }} Ubuntu\n"  
+      register: __result__ # register output from task to new variable
+
+    - name: show Linux Distros
+      debug: msg="{{ __result__.stdout_lines }}" #show result to terminal using dictionary
+
