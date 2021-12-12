@@ -29,7 +29,7 @@ $ ansible all -m setup -a "filter=ansible_distribution"
 $ ansible all -m setup -a "filter=*distribution*"
 
 ```
-### manages file
+## manages file:
 
 
 #### upload file
