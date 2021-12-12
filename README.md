@@ -37,7 +37,7 @@ $ ansible all -m setup -a "filter=*distribution*"
 ```yml
 $ nano test.txt
 $ ansible all -m copy -a "src=test.txt dest=/home/ansible"
-$ ansible all -a "cat /home/aguna/test.txt"
+$ ansible all -a "cat /home/ansible/test.txt"
 
 ```
 #### download file
