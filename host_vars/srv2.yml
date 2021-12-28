@@ -1,1 +1,2 @@
 hostname: srv2
+run_playbook: yes

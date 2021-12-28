@@ -1,0 +1,14 @@
+---
+
+- name: Plabook 5
+  hosts: all
+
+  tasks:
+    - name: Create  condition1
+      shell: echo "new condition" > /home/ansible/condition1.txt
+      when: run_playbook
+
+    #create new condition using operator
+    - name: Create condition2
+      shell: echo "second condition" > /home/ansible/condition2.txt
+      when: hostname == "srv1"  
