@@ -1,0 +1,10 @@
+---
+
+- name: Playbook 6
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: install Apache2
+      apt: name=apache2 state=latest 
+      when: ansible_distribution == "Ubuntu"
