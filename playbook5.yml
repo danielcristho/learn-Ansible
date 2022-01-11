@@ -1,6 +1,6 @@
 ---
 
-- name: Plabook 5
+- name: Playbook 5
   hosts: all
 
   tasks:
