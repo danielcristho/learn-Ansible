@@ -11,4 +11,3 @@ $ ansible-playbook playbook.yaml
 $ ansible-playbook --step playbook.yaml
 
 ```
-<--! more documentations: [dev.to](https://dev.to/danielcristho/ server-management-using-ansible-tool-4dl1) -->
