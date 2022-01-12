@@ -1,2 +1,3 @@
 hostname: sr1
 run_playbook: no
+file: file1.txt

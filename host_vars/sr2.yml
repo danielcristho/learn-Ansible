@@ -1,3 +1,4 @@
 hostname: sr2
 run_playbook: yes
 to_install: nginx
+file: file4.txt
