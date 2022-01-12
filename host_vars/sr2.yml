@@ -1,0 +1,3 @@
+hostname: sr2
+run_playbook: yes
+to_install: nginx
